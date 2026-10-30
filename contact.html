@@ -36,6 +36,27 @@
         <p><strong>Phone:</strong> +880 1700-000000</p>
         <p><strong>Address:</strong> Dhaka, Bangladesh</p>
       </div>
-  
+
+      <div class="contact-form-wrap">
+        <img class="form-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Laptop and notebook on a workspace">
+        <form onsubmit="sendMessage(event)">
+          <label for="name">Your name</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 GadgetZone. All rights reserved.</p>
+    <p>Smart choices. Better technology.</p>
+  </footer>
+      
 </body>
 </html>
