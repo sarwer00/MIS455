@@ -10,3 +10,35 @@ nav { display:flex; gap:10px; }
 nav a { color:#4d5668; text-decoration:none; font-weight:600; padding:10px 16px; border-radius:9px; transition:background .2s,color .2s,transform .2s; }
 nav a:hover { color:var(--brand-dark); background:var(--pale); transform:translateY(-2px); }
 nav a.active { color:var(--brand); background:var(--pale); }
+
+
+
+.hero { display:flex; align-items:center; gap:5%; padding:76px 7%; background:linear-gradient(115deg,#f7f8ff,#fff 70%); }
+.hero-copy { flex:1; }
+.hero-image { flex:1; }
+.hero-image img { width:100%; height:390px; object-fit:cover; border-radius:22px; box-shadow:0 20px 50px #18234a20; }
+h1,h2,h3 { font-family:'Manrope',sans-serif; line-height:1.2; letter-spacing:-.7px; }
+h1 { font-size:clamp(2.3rem,4.5vw,4rem); margin:10px 0 18px; }
+h2 { font-size:2rem; margin:8px 0 14px; }
+h3 { font-size:1.35rem; }
+.hero-copy > p:not(.eyebrow), .page-banner > p:not(.eyebrow) { color:var(--muted); max-width:570px; }
+.eyebrow { color:var(--brand); font-size:.78rem; letter-spacing:2px; font-weight:700; }
+.button-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
+.btn { display:inline-block; border:0; border-radius:9px; padding:13px 21px; background:var(--brand); color:#fff; text-decoration:none; font:700 .95rem 'DM Sans',sans-serif; cursor:pointer; transition:background .2s,transform .2s,box-shadow .2s; }
+
+.btn:hover { background:var(--brand-dark); transform:translateY(-2px); box-shadow:0 8px 18px #4f67e833; }
+.btn-outline { background:transparent; color:var(--brand); border:1px solid #cbd2ff; }
+.btn-outline:hover { color:#fff; }
+.btn-dark { background:var(--ink); }
+.btn-small { padding:10px 15px; margin-top:14px; font-size:.88rem; }
+.section { padding:66px 7%; }
+.section-heading { text-align:center; margin-bottom:34px; }
+.section-heading h2 { margin-top:4px; }
+
+.feature-layout { display:flex; align-items:center; gap:5%; max-width:1050px; margin:auto; }
+.feature-layout img { width:48%; height:310px; object-fit:cover; border-radius:18px; }
+.feature-layout > div { flex:1; }
+.feature-layout p, .contact-copy p { color:var(--muted); }
+.page-banner { text-align:center; padding:62px 7% 48px; background:var(--pale); }
+.page-banner h1 { font-size:clamp(2.1rem,4vw,3.2rem); margin:8px 0 12px; }
+.page-banner > p:not(.eyebrow) { margin:0 auto; }
