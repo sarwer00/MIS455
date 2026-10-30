@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root { --ink:#172033; --muted:#687386; --brand:#4f67e8; --brand-dark:#354bc2; --pale:#f3f5ff; --line:#e7eaf1; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'DM Sans',sans-serif; color:var(--ink); background:#fff; line-height:1.65; }
+.site-header { min-height:76px; padding:0 7%; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); background:#fff; }
+.logo { color:var(--ink); text-decoration:none; font:800 1.65rem 'Manrope',sans-serif; letter-spacing:-1px; }
+.logo span { color:var(--brand); }
+nav { display:flex; gap:10px; }
+nav a { color:#4d5668; text-decoration:none; font-weight:600; padding:10px 16px; border-radius:9px; transition:background .2s,color .2s,transform .2s; }
+nav a:hover { color:var(--brand-dark); background:var(--pale); transform:translateY(-2px); }
+nav a.active { color:var(--brand); background:var(--pale); }
